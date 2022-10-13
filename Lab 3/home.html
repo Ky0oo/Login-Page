@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="container" id="List">
+            <div class="card" style="width: 20rem;">
+                <div class="card-header text-end">
+                    <button type="submit" class="btn btn-primary text-right" id="ListOfPeople"
+                        onclick="Add()">Add</button>
+                </div>
+
+                <div class="card-header">People</div>
+                <ul class="list-group" id="ListOfPeoples">
+                    <li class="list-group-item">Roel Adrian</li>
+                    <li class="list-group-item">Will Smith</li>
+                    <li class="list-group-item">Son Goku</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div style="display: none" class="container" id="AddPeopleSection">
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <div class="name mb-4">
+                        <label>First Name</label>
+                        <input type="first" class="form-control" id="firstName" placeholder="First Name" />
+                    </div>
+                    <div class="name mb-4">
+                        <label>Last Name</label>
+                        <input type="last" class="form-control" id="lastName" placeholder="Last Name" />
+                    </div>
+                    <div class="button text-end">
+                        <button type="cancel" class="btn btn-danger" id="cancelBtn"
+                            onclick="Cancel()">Cancel</button>
+                        <button type="save" class="btn btn-primary text-right" id="saveBtn"
+                            onclick="Save()">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="home.js"> </script>
+
+</html>
